@@ -1,0 +1,228 @@
+
+.main-wrapepr{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-logo-slogon-container{
+    display: flex;
+}
+
+.main-logo-slogon-content{
+    padding: 25px;
+    margin-top: 10px;
+}
+.main-slogon-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.start-btn-container{
+    display: flex;
+}
+.btn{
+    background: var(--main-introduction-card-icon-content-bkg);
+    width: 120px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 30px 20px 20px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+}
+
+.main-title {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.gradient-text{
+    color: transparent;
+    background-image: linear-gradient(to bottom right,var(--main-slogon-gradient-lefttop),var(--main-slogon-gradient-rightbottom));
+    background-clip: text;
+}
+
+.main-subtitle {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.main-description {
+    font-size: 3vw;
+    font-family: Arial, sans-serif;
+}
+.main-logo-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -60px 10px 0 10px;
+}
+
+.gradient-logo-bkg{
+    position: absolute;
+    background:
+            radial-gradient(circle, rgba(255, 255, 255, 0) 30%, var(--main-bkg) 65%),
+            linear-gradient(to bottom right,var(--main-slogon-gradient-lefttop), var(--main-slogon-gradient-rightbottom));
+    filter:blur(20px);
+    border-radius: 50%;
+    z-index: -1;
+    width: 120%;
+    height: 120%;
+    margin: -100px;
+}
+.logo-icon{
+    position: absolute;;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .main-logo-slogon-container{
+        margin-top: 5vh;
+    }
+    .main-logo-slogon-content {
+        display: flex;
+    }
+
+    .main-title,
+    .main-subtitle {
+
+        font-size: 3rem;
+        white-space: nowrap;
+    }
+
+    .main-description {
+        font-size: 1.5rem;
+    }
+
+    .main-logo-container{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-logo-slogon-container{
+        margin-top: 2vh;
+    }
+    .main-logo-slogon-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main-slogon-container{
+        align-items: center;
+    }
+
+    .main-title,
+    .main-subtitle{
+        font-size: 1.5rem;
+    }
+    .main-description{
+        font-size: 1rem;
+    }
+
+    .main-logo-container{
+        width: 300px;
+        height: 300px;
+        margin: -30px 0 30px 0;
+    }
+
+}
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  cards    */
+.main-introduction-cards-container{
+    display: flex;
+}
+
+.main-introduction-cards-content{
+    margin-top: 10px;
+}
+
+.introduction-card-content{
+    border-radius: 40px;
+    background-color: var(--main-introduction-card-content-bkg);
+    margin: 15px 20px 15px 20px;
+    box-shadow: 5px 5px 10px var(--main-introduction-card-content-shadow) ;
+}
+
+.introduction-card-icon-content{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: var(--main-introduction-card-icon-content-bkg);
+    margin-left: 15px;
+    margin-top: 25px;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+
+}
+
+.introduction-card-icon{
+    margin: 10px 0 0 0;
+    font-size: 1.5em;
+
+}
+
+.introduction-card-text-blod{
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+.introduction-card-text-blod-content{
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-card-text-details{
+    margin: 5px 10px 10px 15px;
+}
+
+@media (min-width: 768px) {
+    .main-introduction-cards-content {
+        display: flex;
+    }
+    .introduction-card-title-container{
+        display: flex;
+        align-content: center;
+    }
+    .introduction-card-content{
+        width: 25vw;
+        height: 180px;
+    }
+    .introduction-card-text-blod{
+        margin: 40px 0 0 15px
+    }
+}
+
+@media (max-width: 767px) {
+    .main-introduction-cards-container{
+        margin-bottom: 5vh;
+    }
+    .main-introduction-cards-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .introduction-card-content{
+        width: 95vw;
+        height: 180px;
+        min-width: 250px;
+    }
+    .introduction-card-text-blod{
+        margin: 5px 0 0 15px
+    }
+}

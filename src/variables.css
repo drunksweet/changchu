@@ -1,0 +1,17 @@
+
+:root{
+    --head-bkg: rgb(186,202,36);
+    --topnavbar-item-bkg: rgb(228,176,100);
+    --topnavbar-item-hover-bkg: rgb(206,196,110); 
+    --topnavbar-item-active-bkg:rgb(104,202,36);
+}
+
+:root{
+    --main-bkg: rgb(247,249,224);
+    --main-slogon-gradient-lefttop: rgb(234, 255, 45);
+    --main-slogon-gradient-rightbottom: rgb(149, 62, 18);
+
+    --main-introduction-card-content-bkg:rgba(205, 220, 57, .5);
+    --main-introduction-card-content-shadow:rgba(154, 167, 41, 0.9);
+    --main-introduction-card-icon-content-bkg: rgb(213,226,90);
+}
