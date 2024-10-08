@@ -22,7 +22,7 @@ function Navbar() {
                         <div className="content-body">
                             <nav className="navmenu">
                                 <ul>
-                                    <li><Link to="/home" className="active">主页</Link></li>
+                                    <li><Link to="/" className="active">主页</Link></li>
                                     <li><Link to="/team">团队</Link></li>
                                     <li><Link to="/product">产品</Link></li>
                                 </ul>
