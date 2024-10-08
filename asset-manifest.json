@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/changchu/home/static/css/main.0cb039b2.css",
-    "main.js": "/changchu/home/static/js/main.5ad0134a.js",
-    "static/js/453.9f175145.chunk.js": "/changchu/home/static/js/453.9f175145.chunk.js",
-    "index.html": "/changchu/home/index.html",
-    "main.0cb039b2.css.map": "/changchu/home/static/css/main.0cb039b2.css.map",
-    "main.5ad0134a.js.map": "/changchu/home/static/js/main.5ad0134a.js.map",
-    "453.9f175145.chunk.js.map": "/changchu/home/static/js/453.9f175145.chunk.js.map"
+    "main.css": "/changchu/static/css/main.0cb039b2.css",
+    "main.js": "/changchu/static/js/main.761450ab.js",
+    "static/js/453.9f175145.chunk.js": "/changchu/static/js/453.9f175145.chunk.js",
+    "index.html": "/changchu/index.html",
+    "main.0cb039b2.css.map": "/changchu/static/css/main.0cb039b2.css.map",
+    "main.761450ab.js.map": "/changchu/static/js/main.761450ab.js.map",
+    "453.9f175145.chunk.js.map": "/changchu/static/js/453.9f175145.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb039b2.css",
-    "static/js/main.5ad0134a.js"
+    "static/js/main.761450ab.js"
   ]
 }
