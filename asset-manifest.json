@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/changchu/static/css/main.0cb039b2.css",
-    "main.js": "/changchu/static/js/main.761450ab.js",
+    "main.js": "/changchu/static/js/main.ec605575.js",
     "static/js/453.9f175145.chunk.js": "/changchu/static/js/453.9f175145.chunk.js",
     "index.html": "/changchu/index.html",
     "main.0cb039b2.css.map": "/changchu/static/css/main.0cb039b2.css.map",
-    "main.761450ab.js.map": "/changchu/static/js/main.761450ab.js.map",
+    "main.ec605575.js.map": "/changchu/static/js/main.ec605575.js.map",
     "453.9f175145.chunk.js.map": "/changchu/static/js/453.9f175145.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cb039b2.css",
-    "static/js/main.761450ab.js"
+    "static/js/main.ec605575.js"
   ]
 }
