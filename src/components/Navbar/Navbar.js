@@ -23,7 +23,7 @@ function Navbar() {
                         <Link
                             to="/home"
                             className={`block px-6 py-4 transition-colors duration-200 ${
-                                location.pathname === '/home'
+                                (location.pathname === '/home' || location.pathname === '/')
                                     ? 'bg-[var(--topnavbar-item-active-bkg)]'
                                     : 'hover:bg-[var(--topnavbar-item-hover-bkg)]'
                             }`}
