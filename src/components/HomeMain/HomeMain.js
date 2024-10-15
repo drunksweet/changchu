@@ -1,5 +1,4 @@
 import React from 'react';
-import './HomeMain.css';
 import kiwiFruit from '../../assets/kiwi_fruit_flat.png'
 
 function HomeMain() {
