@@ -10,7 +10,9 @@ function App() {
     return (
         <div className="App">
             <Router basename="/changchu">
-                <Navbar/>
+                <div className="sticky">
+                    <Navbar/>
+                </div>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/home" element={<Home />} />

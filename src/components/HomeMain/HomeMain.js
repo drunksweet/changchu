@@ -6,7 +6,7 @@ function HomeMain() {
         <main>
             <div className="flex flex-col">
                 {/* slogan section */}
-                <div className="flex flex-col md:flex-row md:justify-between md:mt-20 mt-8">
+                <div className="flex flex-col md:flex-row md:justify-between md:mt-12 mt-4">
                     <div className="flex-grow"></div>
                     <div className="flex flex-col-reverse md:flex-row md:justify-between p-6 mt-2.5 justify-center items-center">
                         <div className="flex flex-col md:mr-8 items-center md:items-start">
@@ -20,7 +20,7 @@ function HomeMain() {
                             <p className="text-[1.25re] md:text-2xl mt-2">写着玩，当练习</p>
                             <div className="flex mt-8">
                                 <button className="bg-[var(--main-introduction-card-icon-content-bkg)] w-32 h-12 rounded-full font-bold flex items-center justify-center"
-                                        onClick={() => window.location.href = 'team.html'}>开始
+                                        onClick={() => window.location.href = '/changchu/team'}>开始
                                 </button>
                                 <button className="bg-[var(--main-introduction-card-icon-content-bkg)] w-32 h-12 rounded-full font-bold flex items-center justify-center ml-4"
                                         onClick={() => window.location.href = 'https://github.com/drunksweet/changchu.git'}>源码
@@ -35,7 +35,7 @@ function HomeMain() {
                     <div className="flex-grow"></div>
                 </div>
                 {/* cards section */}
-                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-2.5">
+                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-4 md:mt-8">
                     <div className="flex-grow"></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[95%]">
                         {[

@@ -8,7 +8,7 @@ function Navbar() {
 
     return (
         <header className="flex bg-[var(--head-bkg)] text-center leading-tight m-0 p-0">
-            <div className="flex items-center justify-center md:pl-2 ml:pl-4">
+            <div className="flex items-center justify-center pl-4 md:pl-8">
                 <div className="flex justify-center items-center h-full">
                     <img src={logoKiwiBird} alt="kiwi" className="h-8 w-8"/>
                 </div>
