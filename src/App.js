@@ -7,22 +7,22 @@ import Products from './pages/Products';
 import './App.css';
 
 function App() {
-    return (
-        <div className="App">
-            <Router basename="/changchu">
-                <div className="sticky">
-                    <Navbar/>
-                </div>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/team" element={<Team />} />
-                    <Route path="/products" element={<Products />} />
-                </Routes>
-                {/* 可以在这里添加 <Footer />，如果你有一个底部导航栏 */}
-            </Router>
+  return (
+    <div className="App">
+      <Router basename="/changchu">
+        <div className="sticky">
+          <Navbar />
         </div>
-    );
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
+        {/* 可以在这里添加 <Footer />，如果你有一个底部导航栏 */}
+      </Router>
+    </div>
+  );
 }
 
 export default App;
