@@ -19,10 +19,10 @@ function HomeMain() {
                             </h2>
                             <p className="text-[1.25re] md:text-2xl mt-2">写着玩，当练习</p>
                             <div className="flex mt-8">
-                                <button className="bg-[var(--main-introduction-card-icon-content-bkg)] w-32 h-12 rounded-full font-bold flex items-center justify-center"
+                                <button className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full font-bold flex items-center justify-center"
                                         onClick={() => window.location.href = '/changchu/team'}>开始
                                 </button>
-                                <button className="bg-[var(--main-introduction-card-icon-content-bkg)] w-32 h-12 rounded-full font-bold flex items-center justify-center ml-4"
+                                <button className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full font-bold flex items-center justify-center ml-4"
                                         onClick={() => window.location.href = 'https://github.com/drunksweet/changchu.git'}>源码
                                 </button>
                             </div>
@@ -56,10 +56,10 @@ function HomeMain() {
                             }
                         ].map((card, index) => (
                             <div key={index}
-                                 className="bg-[var(--main-introduction-card-content-bkg)] rounded-[40px] p-6 shadow-lg max-w-[100%]">
+                                 className="bg-wikiGreen-150 rounded-[40px] p-6 shadow-lg max-w-[100%]">
                                 <div className="flex items-center mb-4">
                                     <div
-                                        className="bg-[var(--main-introduction-card-icon-content-bkg)]  w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                        className="bg-wikiGreen-350  w-12 h-12 rounded-full flex items-center justify-center mr-4">
                                         <span className="text-2xl">{card.icon}</span>
                                     </div>
                                     <h3 className="font-bold text-lg">{card.title}</h3>

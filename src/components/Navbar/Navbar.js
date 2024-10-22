@@ -7,7 +7,7 @@ function Navbar() {
     const location = useLocation();
 
     return (
-        <header className="flex bg-[var(--head-bkg)] text-center leading-tight m-0 p-0">
+        <header className="flex bg-wikiGreen-450 text-center leading-tight m-0 p-0">
             <div className="flex items-center justify-center pl-4 md:pl-8">
                 <div className="flex justify-center items-center h-full">
                     <img src={logoKiwiBird} alt="kiwi" className="h-8 w-8"/>
@@ -24,8 +24,8 @@ function Navbar() {
                             to="/home"
                             className={`block px-6 py-4 transition-colors duration-200 ${
                                 (location.pathname === '/home' || location.pathname === '/')
-                                    ? 'bg-[var(--topnavbar-item-active-bkg)]'
-                                    : 'hover:bg-[var(--topnavbar-item-hover-bkg)]'
+                                    ? 'bg-wikiGreen-650'
+                                    : 'hover:bg-wikiGreen-550'
                             }`}
                         >
                             主页
@@ -36,8 +36,8 @@ function Navbar() {
                             to="/team"
                             className={`block px-6 py-4 transition-colors duration-200 ${
                                 location.pathname === '/team'
-                                    ? 'bg-[var(--topnavbar-item-active-bkg)]'
-                                    : 'hover:bg-[var(--topnavbar-item-hover-bkg)]'
+                                    ? 'bg-wikiGreen-650'
+                                    : 'hover:bg-wikiGreen-550'
                             }`}
                         >
                             团队
@@ -48,8 +48,8 @@ function Navbar() {
                             to="/product"
                             className={`block px-6 py-4 transition-colors duration-200 ${
                                 location.pathname === '/product'
-                                    ? 'bg-[var(--topnavbar-item-active-bkg)]'
-                                    : 'hover:bg-[var(--topnavbar-item-hover-bkg)]'
+                                    ? 'bg-wikiGreen-650'
+                                    : 'hover:bg-wikiGreen-550'
                             }`}
                         >
                             产品

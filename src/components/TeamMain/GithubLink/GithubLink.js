@@ -6,7 +6,7 @@ export default function GitHubLink({ href, text, className = "" }) {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`inline-flex items-center px-4 py-2 text-sm font-medium text-gray-100 bg-gray-950 border border-gray-300 rounded-md hover:bg-gray-200 transition duration-200 ${className}`}
+            className={`inline-flex items-center px-3 py-2 text-xs md:text-lg font-medium text-gray-900 bg-wikiGreen-200 rounded-md hover:bg-wikiGreen-400 transition duration-200 ${className}`}
             onClick={(e) => e.stopPropagation()}  // 阻止事件冒泡 style={{ pointerEvents: 'auto' }}     // 确保链接接收点击事件
         >
             <svg className="mr-2 w-4 h-4 bg-white rounded-full" viewBox="0 0 16 16" version="1.1" aria-hidden="true">

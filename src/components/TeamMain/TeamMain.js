@@ -2,60 +2,49 @@ import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, ChevronLeft} from 'lucide-react';
 import eastsun from '../../assets/profilePhoto/eastSun.jpg';
+import shufu from '../../assets/profilePhoto/shufu.jpg';
+import drunksweet from '../../assets/profilePhoto/drunksweet.png';
 
 import GitHubLink from './GithubLink/GithubLink';
+import ProgressBar from './ProgressBar/ProgressBar';
 
-const Section = React.memo(({ title, profile, name, pgithublink, content, isExpanded, onExpand}) => (
+const Section = React.memo(({ title, description ,profile, name, pgithublink, content, skillLevels, isExpanded, onExpand}) => (
     <motion.div
         className={`transition-all ${
-            isExpanded ? 'w-7/10' : 'w-3/14'
-        } h-screen grid ${isExpanded ? 'grid-cols-2' : 'grid-cols-1'} items-start justify-center cursor-pointer border-2 relative overflow-hidden bg-[--main-bkg]`}
+            isExpanded ? 'w-7/10' :     'w-1/4 md:w-1/5 lg:w-1/6'
+        } h-screen grid ${isExpanded ? 'grid-cols-2 grid-rows-3'  : 'grid-cols-1'} grid-rows-3 gap-5 items-start justify-center cursor-pointer relative overflow-hidden bg-wikiGreen-25`}
         onClick={onExpand}
         layout
-        tabIndex={0}
         role="button"
         aria-expanded={isExpanded}
     >
-        <div className={'col-start-1 row-start-1 h-full items-center'}>
-            {/*card1*/}
-            <motion.div
-                className={`col-start-1 row-start-1 row-span-3 w-full h-full order-1 flex-col border-2 mt-8 md:mt-36`}
-                layout
-                style={{ pointerEvents: isExpanded ? 'auto' : 'none' }}  // 仅当展开时允许点击
-            >
-                <h2 className="text-black text-2xl font-bold p-6 border-2">
-                    {title}
-                </h2>
-                <div className="flex items-center justify-center w-full">
-                    <motion.img className='block w-32 h-32 rounded-full my-16'
-                                src={profile}
-                                alt={`${name} profile`}
-                                whileHover={{rotate: 360}}
-                    />
-                </div>
-                <h3 className="font-bold text-lg mb-4">
-                    {name}
-                </h3>
-                <div className="mt-4">
-                    <GitHubLink href={pgithublink} text={`${name}的GitHub`}/>
-                </div>
-            </motion.div>
-            {/*card2*/}
-            <AnimatePresence>
-                {isExpanded && (
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 20 }}
-                        transition={{ duration: 0.3 }}
-                        className="w-full h-full text-center px-4 col-start-1 row-span-2 order-2 border-2"
-                    >
-                        {content}
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </div>
-        {/*card3*/}
+        {/*card1*/}
+        <motion.div
+            className={`col-start-1 row-start-1 row-span-2 w-full h-full order-1 flex-col bg-wikiGreen-25 `}
+            layout
+            style={{ pointerEvents: isExpanded ? 'auto' : 'none' }}  // 仅当展开时允许点击
+        >
+            <h2 className="text-gray-900 text-xl md:text-3xl font-bold mt-4 md:mt-16 bg-wikiGreen-100 rounded-3xl">
+                {title}
+            </h2>
+            <h4 className='text-gray-600 mt-1 md:mt-4 text-sm md:text-xl'>
+                {description}
+            </h4>
+            <div className="flex items-center justify-center w-full">
+                <motion.img className='block w-16 h-16 md:w-32 md:h-32 rounded-full mt-32 md:mt-40'
+                            src={profile}
+                            alt={`${name} profile`}
+                            whileHover={{rotate: 360}}
+                />
+            </div>
+            <h3 className="font-bold text-gray-800 text-base mt-1 md:mt-4 md:text-xl">
+                {name}
+            </h3>
+            <div className="mt-8">
+                <GitHubLink href={pgithublink} text='GitHub' />
+            </div>
+        </motion.div>
+        {/*card2*/}
         <AnimatePresence>
             {isExpanded && (
                 <motion.div
@@ -63,12 +52,27 @@ const Section = React.memo(({ title, profile, name, pgithublink, content, isExpa
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.3 }}
-                    className="w-full h-full text-center col-start-2 row-start-1 row-span-5 order-3 border-2"
+                    className="w-full h-full text-center px-4 col-start-1 row-start-3 row-span-1 order-2 bg-wikiGreen-50 rounded-t-3xl "
                 >
-                    <div className="flex items-center justify-center w-full h-full">
-                        <div className="flex items-center justify-center w-full h-4/5 p-16 bg-gray-500">
-                            {content}
-                        </div>
+                    {content}
+                </motion.div>
+            )}
+        </AnimatePresence>
+        {/*card3*/}
+        <AnimatePresence>
+            {isExpanded && (
+                <motion.div
+                    initial={{opacity: 0, y: 20}}
+                    animate={{opacity: 1, y: 0}}
+                    exit={{opacity: 0, y: 20}}
+                    transition={{duration: 0.3}}
+                    className="w-full h-full col-start-2 row-start-1 row-span-3 order-3 "
+                >
+                    <div className="flex flex-col items-center justify-center w-full h-full p-2 md:p-4 lg:p-8 bg-wikiGreen-100">
+                        <h1 className="uppercase text-lg text-gray-600 md:text-3xl md:px-2 md:py-1 -mt-[10vh] mb-24 bg-wikiGreenBrown-250 rounded-xl shadow-wikiGreenBrown-750">skilltree</h1>
+                        {Object.entries(skillLevels).map(([key, value]) => (
+                            <ProgressBar level={value} skill={key} />
+                        ))}
                     </div>
 
                 </motion.div>
@@ -81,10 +85,66 @@ export default function TeamMain(props) {
     const [expandedSection, setExpandedSection] = useState(null)
 
     const sections = [
-        { title: '产品',profile:eastsun,name:'东方的太阳',pgithublink:'https://github.com/drunksweet',content:'无敌了man'},
-        { title: '前端',profile:eastsun,name:'焦糖酒',pgithublink:'https://github.com/drunksweet',content:'无敌了man'},
-        { title: '前端',profile:eastsun,name:'束缚',pgithublink:'https://github.com/drunksweet',content:'无敌了man'},
-        { title: '后端',profile:eastsun,name:'东方的太阳',pgithublink:'https://github.com/drunksweet',content:'无敌了man'},
+        { title: '产品',
+            description:'需求分析|产品规划|市场调研',
+            profile:drunksweet,
+            name:'焦糖酒',
+            pgithublink:'https://github.com/drunksweet',
+            skillLevels:{
+                'html5': 7,
+                'css3': 7,
+                'javascript': 7,
+                'tailwindcss': 7,
+                'git': 5,
+                'react': 5,
+            },
+            content:'无敌了man',
+        },
+        { title: '前端',
+            description:'用户界面|交互设计|数据展示',
+            profile:drunksweet,
+            name:'焦糖酒',
+            skillLevels:{
+                'html5': 10,
+                'css3': 9,
+                'tailwindcss': 7,
+                'javascript': 7,
+                'git': 7,
+                'react': 5,
+            },
+            pgithublink:'https://github.com/drunksweet',
+            content:'无敌了man'
+        },
+        { title: '前端',
+            description:'用户界面|交互设计|数据展示',
+            profile:shufu,
+            name:'束缚',
+            skillLevels:{
+                'html5': 10,
+                'css3': 9,
+                'javascript': 7,
+                'tailwindcss': 7,
+                'git': 5,
+                'react': 5,
+            },
+            pgithublink:'https://github.com/shufufufu',
+            content:'无敌了man'
+        },
+        { title: '后端',
+            description:'数据处理|服务器管理|API开发',
+            profile:eastsun,
+            name:'东方的太阳',
+            skillLevels:{
+                'html5': 7,
+                'css3': 7,
+                'javascript': 7,
+                'tailwindcss': 7,
+                'git': 5,
+                'react': 5,
+            },
+            pgithublink:'https://github.com/peteriswhat',
+            content:'无敌了man'
+        },
     ]
 
     const handleExpand = useCallback((index) => {
@@ -93,14 +153,16 @@ export default function TeamMain(props) {
 
 
     return (
-        <div className="flex w-full h-[calc(100vh-72px)] justify-center bg-[--main-bkg] overflow-y-hidden" >
+        <div className="flex w-full h-[calc(100vh-72px)] justify-center bg-wikiGreen-25 overflow-y-hidden" >
             {sections.map((section, index) => (
                 <Section
                     key={index}
                     title={section.title}
+                    description={section.description}
                     name={section.name}
                     profile={section.profile}
-                    githublink={section.githublink}
+                    pgithublink={section.pgithublink}
+                    skillLevels={section.skillLevels}
                     content={section.content}
                     isExpanded={expandedSection === index}
                     onExpand={() => handleExpand(index)}
