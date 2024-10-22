@@ -4,9 +4,16 @@
 
 .gradient-logo-bkg {
   @apply absolute rounded-full z-[-1] w-[120%] h-[120%] md:-m-[100px];
-  background:
-          radial-gradient(circle, rgba(255, 255, 255, 0) 30%, var(--main-bkg) 65%),
-          linear-gradient(to bottom right, var(--main-slogon-gradient-lefttop), var(--main-slogon-gradient-rightbottom));
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 30%,
+      var(--main-bkg) 65%
+    ),
+    linear-gradient(
+      to bottom right,
+      var(--main-slogon-gradient-lefttop),
+      var(--main-slogon-gradient-rightbottom)
+    );
   filter: blur(20px);
 }
 
@@ -42,4 +49,3 @@ code {
 body {
   background-color: var(--main-bkg);
 }
-
