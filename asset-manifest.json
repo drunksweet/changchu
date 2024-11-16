@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/changchu/static/css/main.5a24ad2e.css",
-    "main.js": "/changchu/static/js/main.6b39c83e.js",
+    "main.css": "/changchu/static/css/main.52ab2a28.css",
+    "main.js": "/changchu/static/js/main.a35df17a.js",
     "static/js/453.9f175145.chunk.js": "/changchu/static/js/453.9f175145.chunk.js",
     "static/media/drunksweet.png": "/changchu/static/media/drunksweet.6ba3f3fc954d6ed81335.png",
     "static/media/shufu.jpg": "/changchu/static/media/shufu.1b0017a7591d02f989a4.jpg",
     "index.html": "/changchu/index.html",
-    "main.5a24ad2e.css.map": "/changchu/static/css/main.5a24ad2e.css.map",
-    "main.6b39c83e.js.map": "/changchu/static/js/main.6b39c83e.js.map",
+    "main.52ab2a28.css.map": "/changchu/static/css/main.52ab2a28.css.map",
+    "main.a35df17a.js.map": "/changchu/static/js/main.a35df17a.js.map",
     "453.9f175145.chunk.js.map": "/changchu/static/js/453.9f175145.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a24ad2e.css",
-    "static/js/main.6b39c83e.js"
+    "static/css/main.52ab2a28.css",
+    "static/js/main.a35df17a.js"
   ]
 }
