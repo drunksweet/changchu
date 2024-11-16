@@ -10,24 +10,31 @@ function HomeMain() {
                     <div className="flex-grow"></div>
                     <div className="flex flex-col-reverse md:flex-row md:justify-between p-6 mt-2.5 justify-center items-center">
                         <div className="flex flex-col md:mr-8 items-center md:items-start">
-                            <h1 className="font-bold text-3xl md:text-5xl whitespace-nowrap">
-                                <span
-                                    className="bg-gradient-to-br from-[var(--main-slogon-gradient-lefttop)] to-[var(--main-slogon-gradient-rightbottom)] text-transparent bg-clip-text">苌楚KiWi</span>
-                            </h1>
-                            <h2 className="font-bold text-3xl md:text-5xl whitespace-nowrap mt-2">
-                                <span>大学生同寝室工作室</span>
+                            <h2 className="font-bold text-3xl md:text-5xl lg:text-7xl whitespace-nowrap">
+                                <span>🏵️🦁南湖207寝</span>
                             </h2>
-                            <p className="text-[1.25re] md:text-2xl mt-2">写着玩，当练习</p>
+                            <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl whitespace-nowrap  mt-2">
+                                <span
+                                    className="bg-gradient-to-br from-[var(--main-slogon-gradient-lefttop)] to-[var(--main-slogon-gradient-rightbottom)] text-transparent bg-clip-text">
+                                    苌楚KiWi工作室
+                                </span>
+                            </h1>
+                            <p className="text-1xl md:text-3xl lg:text-4xl mt-2">做能文能武的
+                                <span className="text-red-400 font-bold">计算机人</span>
+                            </p>
                             <div className="flex mt-8">
-                                <button className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full font-bold flex items-center justify-center"
-                                        onClick={() => window.location.href = '/changchu/team'}>开始
+                                <button
+                                    className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full text-lg font-bold flex items-center justify-center"
+                                    onClick={() => window.location.href = '/changchu/team'}>开始
                                 </button>
-                                <button className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full font-bold flex items-center justify-center ml-4"
-                                        onClick={() => window.location.href = 'https://github.com/drunksweet/changchu.git'}>源码
+                                <button
+                                    className="bg-wikiGreen-250 hover:bg-wikiGreen-400 w-32 h-12 rounded-full text-lg font-bold flex items-center justify-center ml-4"
+                                    onClick={() => window.location.href = 'https://github.com/drunksweet/changchu.git'}>源码
                                 </button>
                             </div>
                         </div>
-                        <div className="relative flex justify-center items-center md:w-[300px] md:h-[300px] w-[300px] h-[300px]">
+                        <div
+                            className="relative flex justify-center items-center md:w-[300px] md:h-[300px] w-[300px] h-[300px]">
                             <div className="gradient-logo-bkg"></div>
                             <img className="absolute w-1/2 h-1/2 z-10" src={kiwiFruit} alt="kiwi_fruit"/>
                         </div>
@@ -35,19 +42,19 @@ function HomeMain() {
                     <div className="flex-grow"></div>
                 </div>
                 {/* cards section */}
-                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-4 md:mt-8">
+                <div className="flex flex-col justify-center items-center md:flex-row md:justify-between mt-4 md:mt-8 lg:mt-16">
                     <div className="flex-grow"></div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-[95%]">
                         {[
                             {
                                 icon: "⚒️",
                                 title: "注重基础",
-                                description: "专门设立公共的计算机基础线，独立于专业方向的学习。"
+                                description: "立足于计算机学科理论，独立于专业方向学习。"
                             },
                             {
                                 icon: "👍️",
                                 title: "与时俱进",
-                                description: "选用最新的教学材料，每年修订教程，不教过时的内容。"
+                                description: "选用国际主流技术栈，关注前沿新兴科技。"
                             },
                             {
                                 icon: "🐣",
@@ -60,11 +67,11 @@ function HomeMain() {
                                 <div className="flex items-center mb-4">
                                     <div
                                         className="bg-wikiGreen-350  w-12 h-12 rounded-full flex items-center justify-center mr-4">
-                                        <span className="text-2xl">{card.icon}</span>
+                                        <span className="text-2xl md:text-2xl lg:text-3xl">{card.icon}</span>
                                     </div>
-                                    <h3 className="font-bold text-lg">{card.title}</h3>
+                                    <h3 className="font-bold text-xl md:text-xl lg:text-2xl">{card.title}</h3>
                                 </div>
-                                <p className="text-base text-start ml-1.5">{card.description}</p>
+                                <p className="text-base md:text-lg lg:text-xl text-start ml-1.5">{card.description}</p>
                             </div>
                         ))}
                     </div>
