@@ -52,3 +52,7 @@
   - 引入typescript
 - 2024/11/16
   - 首页调整
+
+
+### memo
+部署页面`npm run deploy`

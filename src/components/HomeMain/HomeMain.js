@@ -10,8 +10,8 @@ function HomeMain() {
                     <div className="flex-grow"></div>
                     <div className="flex flex-col-reverse md:flex-row md:justify-between p-6 mt-2.5 justify-center items-center">
                         <div className="flex flex-col md:mr-8 items-center md:items-start">
-                            <h2 className="font-bold text-3xl md:text-5xl lg:text-7xl whitespace-nowrap">
-                                <span>🏵️🦁南湖207寝</span>
+                            <h2 className="font-bold text-3xl md:text-4xl lg:text-6xl whitespace-nowrap">
+                                <span>🏵️🦁南湖最强技术寝</span>
                             </h2>
                             <h1 className="font-bold text-4xl md:text-6xl lg:text-8xl whitespace-nowrap  mt-2">
                                 <span
@@ -19,8 +19,8 @@ function HomeMain() {
                                     苌楚KiWi工作室
                                 </span>
                             </h1>
-                            <p className="text-1xl md:text-3xl lg:text-4xl mt-2">做能文能武的
-                                <span className="text-red-400 font-bold">计算机人</span>
+                            <p className="text-lg md:text-2xl lg:text-3xl mt-2">
+                                纸上得来终觉浅，绝知此事要躬行
                             </p>
                             <div className="flex mt-8">
                                 <button

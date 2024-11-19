@@ -1,6 +1,5 @@
 import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight, ChevronLeft} from 'lucide-react';
 import eastsun from '../../assets/profilePhoto/eastSun.jpg';
 import shufu from '../../assets/profilePhoto/shufu.jpg';
 import drunksweet from '../../assets/profilePhoto/drunksweet.png';
@@ -52,7 +51,7 @@ const Section = React.memo(({ title, description ,profile, name, pgithublink, co
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.3 }}
-                    className="w-full h-full text-center px-4 col-start-1 row-start-3 row-span-1 order-2 bg-wikiGreen-50 rounded-t-3xl "
+                    className="w-full h-full text-center justify-items-center content-center px-4 col-start-1 row-start-3 row-span-1 order-2 bg-wikiGreen-50 rounded-t-3xl "
                 >
                     {content}
                 </motion.div>
@@ -69,7 +68,7 @@ const Section = React.memo(({ title, description ,profile, name, pgithublink, co
                     className="w-full h-full col-start-2 row-start-1 row-span-3 order-3 "
                 >
                     <div className="flex flex-col items-center justify-center w-full h-full p-2 md:p-4 lg:p-8 bg-wikiGreen-100">
-                        <h1 className="uppercase text-lg text-gray-600 md:text-3xl md:px-2 md:py-1 -mt-[10vh] mb-24 bg-wikiGreenBrown-250 rounded-xl shadow-wikiGreenBrown-750">skilltree</h1>
+                        <h1 className="uppercase text-lg text-gray-600 md:text-3xl md:px-2 md:py-1 mb-8 md:mb-12 lg:mb-16 bg-wikiGreenBrown-250 rounded-xl shadow-wikiGreenBrown-750">skilltree</h1>
                         {Object.entries(skillLevels).map(([key, value]) => (
                             <ProgressBar level={value} skill={key} />
                         ))}
@@ -85,10 +84,10 @@ export default function TeamMain(props) {
     const [expandedSection, setExpandedSection] = useState(null)
 
     const sections = [
-        { title: '产品',
-            description:'需求分析|产品规划|市场调研',
-            profile:drunksweet,
-            name:'焦糖酒',
+        { title: '设计',
+            description:'用户界面|原型规划|图形设计',
+            profile: drunksweet,
+            name:'ciciya',
             pgithublink:'https://github.com/drunksweet',
             skillLevels:{
                 'html5': 7,
@@ -105,15 +104,14 @@ export default function TeamMain(props) {
             profile:drunksweet,
             name:'焦糖酒',
             skillLevels:{
-                'html5': 10,
-                'css3': 9,
+                '三件套': 7,
                 'tailwindcss': 7,
-                'javascript': 7,
-                'git': 7,
+                'git': 8,
                 'react': 5,
+                'react-native': 2,
             },
             pgithublink:'https://github.com/drunksweet',
-            content:'无敌了man'
+            content:'吃不了自律的苦，就要忍受平庸的罪'
         },
         { title: '前端',
             description:'用户界面|交互设计|数据展示',
@@ -131,7 +129,7 @@ export default function TeamMain(props) {
             content:'无敌了man'
         },
         { title: '后端',
-            description:'数据处理|服务器管理|API开发',
+            description:'数据处理|主机管理|接口开发',
             profile:eastsun,
             name:'东方的太阳',
             skillLevels:{
